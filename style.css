@@ -1,0 +1,85 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: aliceblue;
+    flex-direction: column;
+}
+
+.header {
+    flex: 0.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    flex: 0.8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    flex: 0.1;
+}
+
+.sliderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftMain {
+    flex-grow: 0.1;
+    height: 100%;
+}
+
+.middleMain {
+    flex-grow: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.rightMain {
+    flex-grow: 0.1;
+    height: 100%;
+}
+
+.canvas {
+    margin: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+    padding: 1px;
+    width: 500px;
+    height: 500px;
+    gap: 0.5px;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    gap: 0.5px;
+}
+
+.columns {
+    flex: 1;
+    background-color: white;
+}
+
+.columns:hover {
+    outline: black solid 0.5px;
+}
